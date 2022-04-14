@@ -30,11 +30,22 @@ double calVariance(int* array, int len)
 double calMean(int* array, int len)
 {
     // implement your code here
-    return 0;
+    	double sum = 0;
+	for(int i=0;i<len;i++){
+		sum+=array[i];
+	}
+	
+	
+	return sum/len;
 }
 
 int findRank(int score, int* array, int len)
 {
     // implement your code here
-    return 0;
+    for(int i=0; i<len;i++){
+	if (array[i] == score) return len-i;
+
+
+}
+	return 0;
 }
